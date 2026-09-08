@@ -1,0 +1,4 @@
+import { Lightbulb, ChartNoAxesColumnIncreasing, Smile } from 'lucide-react';
+import PricingCard from './PricingCard';
+import { offer } from '@/lib/offer';
+export default function OfferSection(){return <section id="offre" className="offer-section"><div className="offer-copy"><h2>Une offre exceptionnelle<br/>pour libérer tout le potentiel<br/>de l’IA</h2><p>Accédez à Gemini Pro pendant {offer.duration} à un prix exceptionnel. Une opportunité pour booster votre productivité, votre créativité et vos projets.</p><div className="mini-benefits">{[[Lightbulb,'Plus d’idées'],[ChartNoAxesColumnIncreasing,'Plus d’efficacité'],[Smile,'Un meilleur quotidien']].map(([Icon,t])=>{const I=Icon as typeof Lightbulb;return <span key={String(t)}><I/>{String(t)}</span>})}</div></div><PricingCard/><div className="planet-scene"><div className="planet-orbit"/><p>L’IA QUI<br/>TRAVAILLE<br/>POUR VOUS</p><div className="planet"/></div></section>}

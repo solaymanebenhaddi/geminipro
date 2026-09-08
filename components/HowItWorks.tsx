@@ -1,0 +1,4 @@
+import { FileText, CircleCheck } from 'lucide-react';
+import { SectionTitle, WhatsAppIcon } from './Shared';
+const steps = [[WhatsAppIcon,'Contactez-nous','Cliquez sur le bouton WhatsApp et envoyez-nous un message.'],[FileText,'Recevez les instructions','Notre équipe vous explique les étapes d’activation.'],[CircleCheck,'Profitez de Gemini Pro','Votre accès est activé, vous pouvez commencer.']] as const;
+export default function HowItWorks(){return <section id="fonctionnement" className="content-section how"><SectionTitle title="Comment ça marche ?" subtitle="Obtenez votre accès à Gemini Pro en 3 étapes simples."/><div className="steps neon-card">{steps.map(([Icon,title,text],i)=><article key={title}><span className="step-number">{i+1}</span><div><Icon/><h3>{title}</h3><p>{text}</p></div></article>)}<span className="handwritten">Simple<br/>Rapide<br/>Efficace !<b>⤶</b></span></div></section>}

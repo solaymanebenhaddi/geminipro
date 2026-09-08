@@ -1,0 +1,4 @@
+import { Brain, ChartNoAxesColumnIncreasing, Star, Headphones } from 'lucide-react';
+import { SectionTitle } from './Shared';
+const items = [[Brain,'IA avancée','Des réponses plus rapides et plus précises pour tous vos besoins.'],[ChartNoAxesColumnIncreasing,'Productivité améliorée','Gagnez du temps et accomplissez davantage en moins de temps.'],[Star,'Expérience premium','Une expérience plus avancée pour votre quotidien.'],[Headphones,'Assistance à l’activation','Une équipe dédiée vous guide à chaque étape.']] as const;
+export default function Benefits(){return <section id="avantages" className="content-section benefits"><SectionTitle title="Pourquoi choisir Gemini Pro ?"/><div className="grid grid-cols-2 lg:grid-cols-4 gap-4">{items.map(([Icon,title,text])=><article className="neon-card benefit-card" key={title}><div className="icon-orb"><Icon/></div><h3>{title}</h3><p>{text}</p></article>)}</div></section>}

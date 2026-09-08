@@ -1,0 +1,2 @@
+import { WhatsAppButton, WhatsAppIcon } from './Shared';
+export default function WhatsAppSupport(){return <section id="assistance" className="support-bar"><WhatsAppIcon className="support-icon"/><div><h2>Une question avant de commander ?</h2><p>Notre équipe est disponible sur WhatsApp pour répondre à toutes vos questions.<br/>Obtenez une réponse rapide et personnalisée.</p></div><WhatsAppButton>Discuter avec un conseiller sur WhatsApp</WhatsAppButton></section>}

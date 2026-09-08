@@ -1,0 +1,2 @@
+import { Logo } from './Shared';
+export default function Footer(){return <footer className="footer"><Logo/><nav aria-label="Informations légales"><a href="/informations#mentions">Mentions légales</a><a href="/informations#conditions">Conditions d’utilisation</a><a href="/informations#confidentialite">Politique de confidentialité</a><a href="/#faq">FAQ</a><a href="/#assistance">Contact</a></nav><p>Ce site est indépendant et n’est pas affilié à Google.<br/>Gemini est une marque appartenant à Google LLC.</p></footer>}
